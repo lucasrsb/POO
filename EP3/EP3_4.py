@@ -19,7 +19,7 @@ class ClienteVIP(Cliente):
 class ClientePremium(Cliente):
     def __init__(self,compra):
         super().__init__(compra)
-        self.desconto = 20
+        self.desconto = 15
 
 TIPOS = {
     1: ClienteRegular,

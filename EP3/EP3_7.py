@@ -5,7 +5,7 @@ class Personagem():
     self.dano = float(dano)
 
   def esta_morto(self):
-    if self.vida < 0:
+    if self.vida <= 0:
       print(f"{self.nome} foi derrotado!\nBatalha encerrada!")
     return self.vida < 0
 

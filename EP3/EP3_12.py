@@ -6,9 +6,11 @@ class CaixaMagica():
     if modo is None:
       return f"Presente: {self.valor}"
     self.valor+="!"
-    if isinstance(modo,int):
-      return "; ".join([self.valor]*modo)
+    if isinstance(valor,int):
+      valor = f"Doces com {valor} calorias"
+      return "; ".join([self.valor]*2)
     else:
+      valor = f"Poção mágica com {valor} ml"
       return f"{self.valor} -> {modo}!"   
 
 tipo = input()
